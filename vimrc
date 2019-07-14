@@ -19,6 +19,7 @@ call plug#begin('~/.vim/plugged')
 " file tree
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
 
 " Initialize plugin system
 call plug#end()
@@ -31,4 +32,6 @@ nnoremap <leader>g :NERDTreeToggle<cr>
 " ctrlp.vim setting
 let g:ctrlp_map = '<c-p>'
 
+" eastmotion setting
+nmap ss <Plug>(easymotion-s2)
 
