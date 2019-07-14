@@ -20,18 +20,23 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'majutsushi/tagbar'
+Plug 'lfv89/vim-interestingwords'
 
 " Initialize plugin system
 call plug#end()
 
 " NERDTree setting
 let NERDTreeShowHiden=1
-nnoremap <leader>t :NERDTreeFind<cr>
+nnoremap <leader>f :NERDTreeFind<cr>
 nnoremap <leader>g :NERDTreeToggle<cr>
 
 " ctrlp.vim setting
 let g:ctrlp_map = '<c-p>'
 
-" eastmotion setting
+" easymotion setting
 nmap ss <Plug>(easymotion-s2)
+
+" tarbar setting
+nnoremap <leader>t :TagbarToggle<CR>
 
