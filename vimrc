@@ -22,6 +22,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'majutsushi/tagbar'
 Plug 'lfv89/vim-interestingwords'
+Plug 'Valloric/YouCompleteMe',{'do':'python3 install.py --clang-completer'}
 
 " Initialize plugin system
 call plug#end()
