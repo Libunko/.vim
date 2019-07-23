@@ -5,6 +5,9 @@ set hlsearch
 " set leader
 let mapleader=','
 
+" use jj replace ESC  
+inoremap jj <ESC>
+
 " use ctrl+h/j/k/l switch window
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -23,6 +26,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'majutsushi/tagbar'
 Plug 'lfv89/vim-interestingwords'
 Plug 'Valloric/YouCompleteMe',{'do':'python3 install.py --clang-completer'}
+Plug 'jiangmiao/auto-pairs'
 
 " Initialize plugin system
 call plug#end()
