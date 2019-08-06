@@ -1,8 +1,30 @@
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+"	    VIM CONFIGURATION FILE FOR LIBUNKO
+"
+"
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" display line number
 set number
+
+" display search highlight
 set hlsearch
 
-" set leader
+" support 256 colours
+set t_Co=256
+
+" encode setting
+set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,gbk
+
+" indentatio nsetting
+set autoindent
+set shiftwidth=4
+set softtabstop=4
+
+" leader setting
 let mapleader=','
 
 " use jj replace ESC  
@@ -46,4 +68,6 @@ nmap ss <Plug>(easymotion-s2)
 
 " tarbar setting
 nnoremap <leader>t :TagbarToggle<CR>
+set tags=tags;
+set autochdir
 
